@@ -9,6 +9,6 @@ RUN apt-get install -y \
     zlib1g-dev \
     libssl-dev
 
-RUN pecl install memcached-3.0.3 && docker-php-ext-enable memcached
+RUN pecl install memcached-3.0.3 && docker-php-ext-enable memcached mysqli pdo_mysql pdo opcache
 
 WORKDIR /var/www/
