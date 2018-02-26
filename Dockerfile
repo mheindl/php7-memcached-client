@@ -7,7 +7,6 @@ RUN apt-get install -y apt-utils
 RUN apt-get install -y \
     libmemcached-dev \
     zlib1g-dev \
-    php-pear \
     libssl-dev
 
 RUN pecl install memcached-3.0.3 && docker-php-ext-enable memcached
